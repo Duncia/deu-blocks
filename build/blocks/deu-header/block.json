@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 2,
+  "name": "deu-blocks/deu-header",
+  "title": "DEU Main Header",
+  "category": "theme",
+  "description": "Page header with menu",
+  "textdomain": "deu-blocks",
+  "attributes": {
+    "logoText": {
+      "type": "string"
+    },
+    "imgId": {
+      "type": "number"
+    },
+    "imgUrl": {
+      "type": "string"
+    },
+    "imgAlt": {
+      "type": "string"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "viewScript": "file:./frontend.js"
+}
