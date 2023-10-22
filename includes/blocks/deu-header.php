@@ -7,7 +7,7 @@ function deu_blocks_deu_header_render_cb($atts){
         <div class="header__inner">
           <div class="header__left">
             <div class="logo">
-                <a href="<?php echo get_home_url(); ?>">
+                <a href="<?php echo pll_home_url();?>">
                   <img src="<?php echo $atts['imgUrl']; ?>" alt="<?php echo $atts['imgAlt']; ?>" width="40" height="40" >
                 </a>
             </div>
