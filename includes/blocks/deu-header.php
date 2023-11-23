@@ -12,7 +12,7 @@ function deu_blocks_deu_header_render_cb($atts){
                 </a>
             </div>
             <div class="logo--text">
-            <?php echo $atts['logoText']; ?>
+            <a href="<?php echo pll_home_url();?>" style="text-decoration: none !important;"><?php echo $atts['logoText']; ?></a>
             </div>
           </div>
           <div class="header__right">

@@ -6,6 +6,9 @@ function deu_blocks_register_blocks(){
         ['name' => 'deu-header','options' => [
             'render_callback' => 'deu_blocks_deu_header_render_cb'
         ]],
+        ['name' => 'deu-footer','options' => [
+            'render_callback' => 'deu_blocks_deu_footer_render_cb'
+        ]],
     ];
 
     foreach($blocks as $block){

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector("#footerYear"),t=new Date;!function(){let n=t.getFullYear();e.innerHTML=`${n}`}()}));

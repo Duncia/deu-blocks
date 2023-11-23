@@ -1,0 +1,118 @@
+.footer {
+  background-color: #2d2c3c;
+  color: #9c9c9e;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__inner {
+    max-width: 1240px;
+    @media only screen and (min-width: 102.5em) {
+      max-width: 1440px;
+    }
+    margin: auto;
+  }
+
+  &-bottom {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top: 1px solid rgba(156, 156, 158, 0.3);
+    text-align: center;
+    color: #9c9c9e;
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media only screen and (min-width: 48em) {
+      grid-template-columns: 1fr 2fr;
+    }
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding-bottom: 2rem;
+    &__description {
+      max-width: 22rem;
+      margin: auto;
+      @media only screen and (min-width: 48em) {
+        margin-left: 0;
+      }
+      .footer-title {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        justify-content: center;
+        @media only screen and (min-width: 48em) {
+          justify-content: left;
+        }
+      }
+      svg {
+        max-width: 40px;
+        margin-right: 1rem;
+        fill: #ffffff;
+      }
+      .footer-text {
+        font-size: 1rem;
+        padding: 2rem 1rem 2rem 0rem;
+        line-height: 1.2;
+        text-align: center;
+        @media only screen and (min-width: 48em) {
+          text-align: left;
+        }
+      }
+      .footer-social-icons {
+        text-align: center;
+        @media only screen and (min-width: 48em) {
+          text-align: left;
+        }
+        a {
+          text-decoration: none;
+          svg {
+            max-width: 30px;
+          }
+          svg:hover {
+            fill: #9c9c9e;
+          }
+        }
+      }
+    }
+  }
+  .footer-content__menu {
+    display: flex;
+    justify-content: center;
+    @media only screen and (min-width: 48em) {
+      display: block;
+    }
+    .footer-menu {
+      ul {
+        display: grid;
+        grid-template-columns: max-content;
+        @media only screen and (min-width: 30em) {
+          grid-template-columns: max-content max-content;
+        }
+        column-gap: 4rem;
+        li {
+          list-style: none;
+          a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            &:hover {
+              color: #ffffff !important;
+            }
+          }
+          .sub-menu {
+            display: block;
+            li {
+              padding-bottom: 1rem;
+            }
+            li:first-child {
+              padding-top: 1rem;
+            }
+          }
+        }
+        .current-menu-item {
+          color: #9c9c9e !important;
+        }
+      }
+    }
+  }
+}

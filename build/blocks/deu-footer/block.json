@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 2,
+  "name": "deu-blocks/deu-footer",
+  "title": "DEU Main Footer",
+  "category": "theme",
+  "description": "Page footer",
+  "textdomain": "deu-blocks",
+  "attributes": {},
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "viewScript": "file:./frontend.js"
+}
