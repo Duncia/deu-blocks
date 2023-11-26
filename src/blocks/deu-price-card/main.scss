@@ -1,0 +1,196 @@
+.four-cards {
+  &__inner {
+    .four-cards-container {
+      .card {
+        display: block;
+        background-color: #ffffff;
+        padding: 1.25rem;
+        &__top {
+          min-height: 150px;
+          display: block !important;
+        }
+        h3 {
+          padding-bottom: 1rem;
+          font-size: 1.5625rem;
+          text-transform: uppercase;
+        }
+        &--one {
+          border-radius: 10px 0px 0px 10px;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+          border: 1px solid #c8ced4;
+          border-right: none;
+        }
+        &--two {
+          border-left: 1px solid #eef5f5;
+          box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.05);
+          border: 1px solid #c8ced4;
+          border-right: none;
+        }
+        &--three {
+          position: relative;
+          border-top: 4px solid #6f26c2;
+          border-left: 1px solid #c8ced4 !important;
+          border-right: 1px solid #c8ced4;
+          border-bottom: 1px solid #c8ced4;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+          margin-top: -1.5rem;
+          margin-bottom: -1.5rem;
+          .card__top {
+            margin-top: 1.25rem;
+          }
+        }
+        &--four {
+          border-left: 1px solid #eef5f5;
+          border-radius: 0px 10px 10px 0px;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+          border: 1px solid #c8ced4;
+          border-left: none;
+        }
+        .wp-block-buttons {
+          display: block !important;
+          width: 100%;
+          .wp-block-button {
+            display: block !important;
+          }
+        }
+        a {
+          display: block;
+          color: #ffffff;
+          background-color: #6f26c2;
+          font-family: inherit;
+          font-weight: 700;
+          text-decoration: none !important;
+          padding: 10px 15px 10px 15px;
+          border-radius: 4px;
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+          min-width: 20px;
+          text-align: center;
+          &:after {
+            content: "";
+          }
+        }
+        a:hover {
+          background-color: #0f110f;
+        }
+        &__prices {
+          display: block !important;
+          padding-top: 1.25rem;
+          padding-bottom: 1.25rem;
+          .hide-price {
+            display: none !important;
+          }
+          p {
+            font-family: "Lexend Deca", sans-serif;
+            position: relative;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #6f26c2;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #6f26c2;
+            span {
+              color: #6c6c6c;
+              font-size: 13px;
+              font-weight: 400;
+              align-self: end;
+              padding-bottom: 3px;
+            }
+          }
+        }
+        &__list {
+          display: block !important;
+          p {
+            padding-bottom: 10px;
+          }
+          ul {
+            li {
+              list-style: none;
+              font-size: 0.9rem;
+              line-height: 1.5;
+              padding-left: 1rem;
+              position: relative;
+            }
+            .hide-price {
+              display: none !important;
+            }
+            li:before {
+              content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M4.20619 10.4012L0 6.19499L1.02504 5.18763L4.20619 8.36878L10.975 1.6L12 2.60736L4.20619 10.4012Z' fill='%2342A099'/%3E%3C/svg%3E");
+              position: absolute;
+              left: 0;
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+        &__label {
+          background-color: #6f26c2;
+          border-radius: 0px 0px 4px 4px;
+          color: #ffffff;
+          display: block;
+          padding: 1px 10px 5px 10px;
+          position: absolute;
+          top: 0;
+          right: 1.25rem;
+        }
+      }
+    }
+    @media only screen and (min-width: 102.5em) {
+      .card__list ul li {
+        font-size: 1rem !important;
+      }
+    }
+    @media only screen and (max-width: 64em) {
+      .four-cards-container {
+        .card {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          column-gap: 2rem;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px;
+          max-width: 35rem;
+          width: 100%;
+          &--one {
+            border-right: 1px solid #c8ced4;
+          }
+          &--two {
+            border-right: 1px solid #c8ced4;
+          }
+          &--three {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+          &--four {
+            border-left: 1px solid #c8ced4;
+          }
+          &__prices {
+            grid-row: span 2;
+          }
+          &__top {
+            min-height: auto;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 37.5em) {
+      .four-cards-container {
+        .card {
+          display: block;
+          &--three {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+          &__top {
+            min-height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+.wp-block-deu-blocks-deu-price-card
+  .card__prices
+  .block-editor-rich-text__editable.wp-block-button__link.wp-element-button.rich-text:after {
+  content: "" !important;
+}

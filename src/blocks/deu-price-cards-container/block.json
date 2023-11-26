@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 2,
+  "name": "deu-blocks/deu-price-cards-container",
+  "title": "DEU Cards Container",
+  "category": "theme",
+  "description": "Cards Container",
+  "textdomain": "deu-blocks",
+  "attributes": {
+    "mainTitle": {
+      "type": "string",
+      "default": "Let's work together"
+    },
+    "switcherNotUrgent": {
+      "type": "string",
+      "default": "Not urgent"
+    },
+    "switcherUrgent": {
+      "type": "string",
+      "default": "Urgent"
+    },
+    "switcherSaveText": {
+      "type": "string",
+      "default": "Cheaper option"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "viewScript": "file:./frontend.js",
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true,
+      "gradients": true
+    },
+    "spacing": { "margin": true, "padding": true },
+    "dimensions": { "minHeight": true }
+  }
+}

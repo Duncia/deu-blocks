@@ -2,6 +2,59 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/deu-price-cards-container/save.js":
+/*!******************************************************!*\
+  !*** ./src/blocks/deu-price-cards-container/save.js ***!
+  \******************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__({
+  attributes
+}) {
+  const {
+    mainTitle,
+    switcherNotUrgent,
+    switcherUrgent,
+    switcherSaveText
+  } = attributes;
+  const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save({
+    className: `container four-cards`
+  });
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...blockProps
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "container__inner  four-cards__inner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "four-cards__top"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
+    value: mainTitle
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "four-cards__switcher switcher"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "switcher__btn switcher__btn--left"
+  }, switcherNotUrgent, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "switcher__btn--left-bg"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "switcher__btn switcher__btn--right"
+  }, switcherUrgent, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "switcher__btn--right-bg"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "top-save-label"
+  }, switcherSaveText))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null)));
+}
+
+/***/ }),
+
 /***/ "./src/icons.js":
 /*!**********************!*\
   !*** ./src/icons.js ***!
@@ -64,10 +117,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/deu-header/main.scss":
-/*!*****************************************!*\
-  !*** ./src/blocks/deu-header/main.scss ***!
-  \*****************************************/
+/***/ "./src/blocks/deu-price-cards-container/main.scss":
+/*!********************************************************!*\
+  !*** ./src/blocks/deu-price-cards-container/main.scss ***!
+  \********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -187,9 +240,9 @@ module.exports = window["wp"]["components"];
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-/*!****************************************!*\
-  !*** ./src/blocks/deu-header/index.js ***!
-  \****************************************/
+/*!*******************************************************!*\
+  !*** ./src/blocks/deu-price-cards-container/index.js ***!
+  \*******************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -200,81 +253,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _icons_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../icons.js */ "./src/icons.js");
-/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./main.scss */ "./src/blocks/deu-header/main.scss");
+/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./main.scss */ "./src/blocks/deu-price-cards-container/main.scss");
+/* harmony import */ var _save_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./save.js */ "./src/blocks/deu-price-cards-container/save.js");
 
 
 
 
 
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)("deu-blocks/deu-header", {
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)("deu-blocks/deu-price-cards-container", {
   icon: _icons_js__WEBPACK_IMPORTED_MODULE_4__["default"].primary,
   edit({
     attributes,
     setAttributes
   }) {
     const {
-      logoText,
-      imgId,
-      imgUrl,
-      imgAlt
+      mainTitle,
+      switcherNotUrgent,
+      switcherUrgent,
+      switcherSaveText
     } = attributes;
-    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
-    function onFileSelect(img) {
-      setAttributes({
-        imgId: img.id
-      });
-      setAttributes({
-        imgUrl: img.url
-      });
-      setAttributes({
-        imgAlt: img.alt
-      });
-    }
-    function handleTextChange(val) {
-      setAttributes({
-        logoText: val
-      });
-    }
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)({
+      className: `container four-cards`
+    });
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-      title: "Images",
+      title: "Switcher texts",
       initialOpen: true
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.MediaUpload, {
-      onSelect: onFileSelect,
-      value: imgId,
-      render: ({
-        open
-      }) => {
-        return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-          onClick: open
-        }, "Logo image");
-      }
-    }))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+      value: switcherNotUrgent,
+      onChange: val => setAttributes({
+        switcherNotUrgent: val
+      })
+    })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+      value: switcherUrgent,
+      onChange: val => setAttributes({
+        switcherUrgent: val
+      })
+    })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+      value: switcherSaveText,
+      onChange: val => setAttributes({
+        switcherSaveText: val
+      })
+    })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       ...blockProps
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("header", {
-      className: "container header"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "header__inner"
+      className: "container__inner  four-cards__inner"
     }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "header__left"
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "logo"
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: imgUrl,
-      alt: imgAlt,
-      height: "40",
-      width: "40"
-    })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "logo--text"
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, {
+      className: "four-cards__top"
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, {
       allowedFormats: [],
-      value: logoText,
-      onChange: handleTextChange,
-      placeholder: "Logo text"
-    }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      class: "header__right"
-    }, "Header menu & burger")))));
-  }
+      value: mainTitle,
+      onChange: mainTitle => setAttributes({
+        mainTitle
+      }),
+      placeholder: "Main title"
+    })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "four-cards__switcher switcher"
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "switcher__btn switcher__btn--left"
+    }, switcherNotUrgent, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "switcher__btn--left-bg"
+    })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "switcher__btn switcher__btn--right"
+    }, switcherUrgent, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "switcher__btn--right-bg"
+    })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "top-save-label"
+    }, switcherSaveText))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, null))));
+  },
+  save: _save_js__WEBPACK_IMPORTED_MODULE_6__["default"]
 });
 }();
 /******/ })()

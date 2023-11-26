@@ -9,6 +9,9 @@ function deu_blocks_register_blocks(){
         ['name' => 'deu-footer','options' => [
             'render_callback' => 'deu_blocks_deu_footer_render_cb'
         ]],
+        ['name' => 'deu-price-cards-container'],
+        ['name' => 'deu-price-card'],
+        ['name' => 'deu-two-cols-container'],
     ];
 
     foreach($blocks as $block){

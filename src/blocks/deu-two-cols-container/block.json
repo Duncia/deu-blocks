@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 2,
+  "name": "deu-blocks/deu-two-cols-container",
+  "title": "DEU Two Cols Container",
+  "category": "theme",
+  "description": "Two cols with image container",
+  "textdomain": "deu-blocks",
+  "attributes": {},
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true,
+      "gradients": true
+    },
+    "spacing": { "margin": true, "padding": true },
+    "dimensions": { "minHeight": true }
+  }
+}

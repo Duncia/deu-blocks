@@ -1,0 +1,28 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/zs-two-cols-container/main.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.zs-two-cols-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.zs-two-cols-container .content-mx-w-560 {
+  max-width: 560px;
+}
+.zs-two-cols-container .zs-two-cols-main-img-cont {
+  display: none !important;
+}
+.zs-two-cols-container .zs-two-cols-mobile-img-cont {
+  display: block !important;
+  max-width: 320px;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 650px) {
+  .zs-two-cols-container .zs-two-cols-main-img-cont {
+    display: block !important;
+  }
+  .zs-two-cols-container .zs-two-cols-mobile-img-cont {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 2,
+  "name": "deu-blocks/deu-price-card",
+  "title": "DEU Single Card",
+  "category": "theme",
+  "description": "Card",
+  "textdomain": "deu-blocks",
+  "attributes": {},
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true,
+      "gradients": true
+    },
+    "spacing": { "margin": true, "padding": true },
+    "dimensions": { "minHeight": true }
+  }
+}

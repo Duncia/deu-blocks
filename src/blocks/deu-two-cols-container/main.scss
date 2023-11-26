@@ -1,0 +1,33 @@
+.deu-two-cols-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__inner {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    .max-content-width {
+      max-width: 35rem;
+      margin: auto;
+    }
+    .max-img-width {
+      max-width: 35rem;
+    }
+    .img-below-text {
+      order: 2;
+    }
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .deu-two-cols-container {
+    &__inner {
+      grid-template-columns: 1fr 1fr;
+      .max-content-width {
+        max-width: 100% !important;
+      }
+    }
+    .img-below-text {
+      order: 0;
+    }
+  }
+}
